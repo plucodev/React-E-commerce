@@ -15,29 +15,18 @@ class Featured extends React.Component {
 						let randDrone = Math.floor(Math.random() * 4);
 						let randSnow = Math.floor(Math.random() * (8 - 5)) + 5;
 						let randMale = Math.floor(Math.random() * (12 - 9)) + 9;
-						let randMed =
-							Math.floor(Math.random() * (16 - 13)) + 13;
+						let randMed = Math.floor(Math.random() * (16 - 13)) + 13;
 						return (
 							<React.Fragment>
-								<div className="h1 text-center mb-4">
-									Featured Products
-								</div>
+								<div className="h1 text-center mb-4">Featured Products</div>
 								<div className="card-deck">
 									<div className="card text-center  px-2">
 										<div className="card-header bg-transparent pb-2 mb-2 text-capitalize">
-											Category:{" "}
-											<h6>
-												{
-													store.products[randDrone]
-														.category
-												}
-											</h6>
+											Category: <h6>{store.products[randDrone].category}</h6>
 										</div>
 										<img
 											className="card-img-top"
-											src={
-												store.products[randDrone].image
-											}
+											src={store.products[randDrone].image}
 											alt="Generic placeholder image"
 											width="140"
 											height="140"
@@ -46,35 +35,18 @@ class Featured extends React.Component {
 											{store.products[randDrone].name}
 										</h5>
 										<p className="text-truncate font-weight-light">
-											{
-												store.products[randDrone]
-													.description
-											}
+											{store.products[randDrone].description}
 										</p>
-										<p className="font-weight-bold">
-											{price(
-												store.products[randDrone].price
-											)}
-										</p>
+										<p className="font-weight-bold">{price(store.products[randDrone].price)}</p>
 										<div className="font-weight-light">
-											<Rating
-												stars={
-													store.products[randDrone]
-														.rating
-												}
-											/>
+											<Rating stars={store.products[randDrone].rating} />
 										</div>
 
 										<div className="card-footer bg-transparent ">
 											<p className="mb-0">
 												<Link
 													className="btn btn-success"
-													to={
-														"/product/" +
-														store.products[
-															randDrone
-														].sku
-													}
+													to={"/product/" + store.products[randDrone].sku}
 													role="button">
 													View details &raquo;
 												</Link>
@@ -83,13 +55,7 @@ class Featured extends React.Component {
 									</div>
 									<div className="card text-center">
 										<div className="card-header bg-transparent pb-2 mb-2 text-capitalize">
-											Category:{" "}
-											<h6>
-												{
-													store.products[randSnow]
-														.category
-												}
-											</h6>
+											Category: <h6>{store.products[randSnow].category}</h6>
 										</div>
 										<img
 											className="card-img-top"
@@ -102,33 +68,17 @@ class Featured extends React.Component {
 											{store.products[randSnow].name}
 										</h5>
 										<p className="text-truncate font-weight-light">
-											{
-												store.products[randSnow]
-													.description
-											}
+											{store.products[randSnow].description}
 										</p>
-										<p className="font-weight-bold">
-											{price(
-												store.products[randSnow].price
-											)}
-										</p>
+										<p className="font-weight-bold">{price(store.products[randSnow].price)}</p>
 										<div className="font-weight-light">
-											<Rating
-												stars={
-													store.products[randSnow]
-														.rating
-												}
-											/>
+											<Rating stars={store.products[randSnow].rating} />
 										</div>
 										<div className="card-footer bg-transparent ">
 											<p className="mb-0">
 												<Link
 													className="btn btn-success"
-													to={
-														"/product/" +
-														store.products[randSnow]
-															.sku
-													}
+													to={"/product/" + store.products[randSnow].sku}
 													role="button">
 													View details &raquo;
 												</Link>
@@ -137,13 +87,7 @@ class Featured extends React.Component {
 									</div>
 									<div className="card text-center">
 										<div className="card-header bg-transparent pb-2 mb-2 text-capitalize">
-											Category:{" "}
-											<h6>
-												{
-													store.products[randMale]
-														.category
-												}
-											</h6>
+											Category: <h6>{store.products[randMale].category}</h6>
 										</div>
 										<img
 											className="card-img-top"
@@ -156,33 +100,17 @@ class Featured extends React.Component {
 											{store.products[randMale].name}
 										</h5>
 										<p className="text-truncate font-weight-light">
-											{
-												store.products[randMale]
-													.description
-											}
+											{store.products[randMale].description}
 										</p>
-										<p className="font-weight-bold">
-											{price(
-												store.products[randMale].price
-											)}
-										</p>
+										<p className="font-weight-bold">{price(store.products[randMale].price)}</p>
 										<div className="font-weight-light">
-											<Rating
-												stars={
-													store.products[randMale]
-														.rating
-												}
-											/>
+											<Rating stars={store.products[randMale].rating} />
 										</div>
 										<div className="card-footer bg-transparent ">
 											<p className="mb-0">
 												<Link
 													className="btn btn-success"
-													to={
-														"/product/" +
-														store.products[randMale]
-															.sku
-													}
+													to={"/product/" + store.products[randMale].sku}
 													role="button">
 													View details &raquo;
 												</Link>
@@ -191,13 +119,7 @@ class Featured extends React.Component {
 									</div>
 									<div className="card text-center">
 										<div className="card-header bg-transparent pb-2 mb-2 text-capitalize">
-											Category:{" "}
-											<h6>
-												{
-													store.products[randMed]
-														.category
-												}
-											</h6>
+											Category: <h6>{store.products[randMed].category}</h6>
 										</div>
 										<img
 											className="card-img-top"
@@ -210,33 +132,17 @@ class Featured extends React.Component {
 											{store.products[randMed].name}
 										</h5>
 										<p className="text-truncate font-weight-light">
-											{
-												store.products[randMed]
-													.description
-											}
+											{store.products[randMed].description}
 										</p>
-										<p className="font-weight-bold">
-											{price(
-												store.products[randMed].price
-											)}
-										</p>
+										<p className="font-weight-bold">{price(store.products[randMed].price)}</p>
 										<div className="font-weight-light">
-											<Rating
-												stars={
-													store.products[randMed]
-														.rating
-												}
-											/>
+											<Rating stars={store.products[randMed].rating} />
 										</div>
 										<div className="card-footer bg-transparent ">
 											<p className="mb-0">
 												<Link
 													className="btn btn-success"
-													to={
-														"/product/" +
-														store.products[randMed]
-															.sku
-													}
+													to={"/product/" + store.products[randMed].sku}
 													role="button">
 													View details &raquo;
 												</Link>

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext.jsx";
+import { Context } from "../store/appContext.js";
 import "../../styles/cart.css";
 import PropTypes from "prop-types";
 
-import { price } from "../component/functional/price.jsx";
+import { price } from "../component/functional/price.js";
 
 const ColoredLine = () => (
 	<hr
@@ -53,10 +53,7 @@ export class CartItem extends React.Component {
 										<div className="col-3 col-sm-3 col-md-6 text-md-right padding-top-5">
 											<h6>
 												<strong>
-													{price(product.price)}{" "}
-													<span className="text-muted">
-														x
-													</span>
+													{price(product.price)} <span className="text-muted">x</span>
 												</strong>
 											</h6>
 										</div>
@@ -105,15 +102,9 @@ export class CartItem extends React.Component {
 												value="-"
 												className="btn btn-outline-danger btn-xs"
 												onClick={() =>
-													actions.removeItemFromCart(
-														this.props.index,
-														this.props.history
-													)
+													actions.removeItemFromCart(this.props.index, this.props.history)
 												}>
-												<i
-													className="fa fa-trash"
-													aria-hidden="true"
-												/>
+												<i className="fa fa-trash" aria-hidden="true" />
 											</button>
 										</div>
 									</div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
-import { Context } from "../store/appContext.jsx";
+import { Context } from "../store/appContext.js";
 
 class Modal extends React.Component {
 	constructor() {
@@ -21,9 +21,7 @@ class Modal extends React.Component {
 				<div className="modal-dialog" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							<h5 className="modal-title">
-								Thank you for your order!
-							</h5>
+							<h5 className="modal-title">Thank you for your order!</h5>
 							{this.props.onClose ? (
 								<button
 									onClick={() => this.props.onClose()}
@@ -48,9 +46,7 @@ class Modal extends React.Component {
 											<button
 												onClick={() => {
 													this.props.onClose();
-													this.props.history.push(
-														"/"
-													);
+													this.props.history.push("/");
 												}}
 												type="button"
 												className="btn btn-success"

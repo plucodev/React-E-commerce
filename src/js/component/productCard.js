@@ -1,11 +1,11 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
-import { Context } from "../store/appContext.jsx";
+import { Context } from "../store/appContext.js";
 import { Link } from "react-router-dom";
-import { Rating } from "../component/rating.jsx";
+import { Rating } from "../component/rating.js";
 
-import { price } from "../component/functional/price.jsx";
+import { price } from "../component/functional/price.js";
 
 export class ProductCard extends React.Component {
 	render() {

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext.jsx";
+import { Context } from "../store/appContext.js";
 import PropTypes from "prop-types";
 import { Cart } from "../component/cartItem.jsx";
-import { CheckoutCart } from "../component/checkoutCart.jsx";
+import { CheckoutCart } from "../component/checkoutCart.js";
 
-import { price } from "../component/functional/price.jsx";
+import { price } from "../component/functional/price.js";
 
 export class Navbar extends React.Component {
 	render() {
@@ -25,9 +25,7 @@ export class Navbar extends React.Component {
 						<span className="navbar-toggler-icon" />
 					</button>
 
-					<div
-						className="collapse navbar-collapse "
-						id="navbarSupportedContent">
+					<div className="collapse navbar-collapse " id="navbarSupportedContent">
 						<ul className="navbar-nav mr-auto">
 							<li className="nav-item active">
 								<Link to="/" className="nav-link">
@@ -53,14 +51,11 @@ export class Navbar extends React.Component {
 									{({ store, actions }) => {
 										let message = "";
 										let path = "/login";
-										const userStatus = store.users.find(
-											user => {
-												return user.logStatus === true;
-											}
-										);
+										const userStatus = store.users.find(user => {
+											return user.logStatus === true;
+										});
 										if (userStatus) {
-											message =
-												"Welcome " + userStatus.email;
+											message = "Welcome " + userStatus.email;
 											path = "/logout";
 										} else {
 											message = "Login";
@@ -68,9 +63,7 @@ export class Navbar extends React.Component {
 
 										return (
 											<li className="nav-item active">
-												<Link
-													to={path}
-													className="nav-link">
+												<Link to={path} className="nav-link">
 													{message}
 												</Link>
 												<span className="sr-only" />
@@ -90,25 +83,15 @@ export class Navbar extends React.Component {
 							<Context.Consumer>
 								{({ store, actions }) => {
 									let cartTotal = 0;
-									store.cart.forEach(
-										(item, index, history) => {
-											let product = store.products.find(
-												products => {
-													return (
-														products.sku ===
-														item.sku
-													);
-												}
-											);
-											cartTotal +=
-												product.price * item.quantity;
-										}
-									);
+									store.cart.forEach((item, index, history) => {
+										let product = store.products.find(products => {
+											return products.sku === item.sku;
+										});
+										cartTotal += product.price * item.quantity;
+									});
 									return (
 										<div className="text-wrap">
-											<span className="small badge badge-danger">
-												{price(cartTotal)}
-											</span>
+											<span className="small badge badge-danger">{price(cartTotal)}</span>
 										</div>
 									);
 								}}

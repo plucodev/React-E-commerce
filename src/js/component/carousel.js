@@ -4,13 +4,7 @@ import { UncontrolledCarousel } from "reactstrap";
 import { Button } from "reactstrap";
 import PropTypes from "prop-types";
 import rigoImage from "../../img/ecommerce.jpg";
-import {
-	Carousel,
-	CarouselItem,
-	CarouselControl,
-	CarouselIndicators,
-	CarouselCaption
-} from "reactstrap";
+import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from "reactstrap";
 
 const items = [
 	{
@@ -33,8 +27,7 @@ const items = [
 		buttonCaption: "Shop Now"
 	},
 	{
-		src:
-			"https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		src: "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
 		altText: "Visit Our New Blog Page",
 		caption: "and check all the news",
 		content: "Visit Our Blog",
@@ -64,19 +57,13 @@ class CarouselHome extends React.Component {
 
 	next() {
 		if (this.animating) return;
-		const nextIndex =
-			this.state.activeIndex === items.length - 1
-				? 0
-				: this.state.activeIndex + 1;
+		const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
 		this.setState({ activeIndex: nextIndex });
 	}
 
 	previous() {
 		if (this.animating) return;
-		const nextIndex =
-			this.state.activeIndex === 0
-				? items.length - 1
-				: this.state.activeIndex - 1;
+		const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
 		this.setState({ activeIndex: nextIndex });
 	}
 
@@ -98,16 +85,10 @@ class CarouselHome extends React.Component {
 
 		const slides = items.map(item => {
 			return (
-				<CarouselItem
-					onExiting={this.onExiting}
-					onExited={this.onExited}
-					key={item.src}>
+				<CarouselItem onExiting={this.onExiting} onExited={this.onExited} key={item.src}>
 					<img src={item.src} alt={item.altText} />
 					<div className="carousel-caption mb-5 custom-caption">
-						<CarouselCaption
-							captionText={item.caption}
-							captionHeader={item.content}
-						/>
+						<CarouselCaption captionText={item.caption} captionHeader={item.content} />
 					</div>
 
 					<div className={this.displayButton(this.activeIndex)}>
@@ -122,26 +103,11 @@ class CarouselHome extends React.Component {
 		});
 
 		return (
-			<Carousel
-				activeIndex={activeIndex}
-				next={this.next}
-				previous={this.previous}>
-				<CarouselIndicators
-					items={items}
-					activeIndex={activeIndex}
-					onClickHandler={this.goToIndex}
-				/>
+			<Carousel activeIndex={activeIndex} next={this.next} previous={this.previous}>
+				<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
 				{slides}
-				<CarouselControl
-					direction="prev"
-					directionText="Previous"
-					onClickHandler={this.previous}
-				/>
-				<CarouselControl
-					direction="next"
-					directionText="Next"
-					onClickHandler={this.next}
-				/>
+				<CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+				<CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
 			</Carousel>
 		);
 	}

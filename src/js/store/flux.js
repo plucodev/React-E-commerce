@@ -103,8 +103,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					category: "male products",
 					sku: "8799921",
-					image:
-						"https://images-na.ssl-images-amazon.com/images/I/71r0Rqw820L._SY355_.jpg",
+					image: "https://images-na.ssl-images-amazon.com/images/I/71r0Rqw820L._SY355_.jpg",
 					name: "Bio Fusion Hair Loss Shampoo",
 					description:
 						"A UNISEX HAIR LOSS SOLUTION This maximum strength DHT fighting shampoo provides a safe and effective solution to the hair thinning naturally, for male and female pattern hair loss. Sesame seed oil, evening primrose oil & rosemary oil all work in synergy to reduce hair shedding and fight hair loss at the root. The minerals such as iron and zinc provide the nutrients needed for hair to encourage healthy hair growth and treat dandruff a well.",
@@ -147,8 +146,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					category: "medical marijuana",
 					sku: "873388288",
-					image:
-						"http://knoxmedical.com/wp-content/uploads/2018/08/p2-10.png",
+					image: "http://knoxmedical.com/wp-content/uploads/2018/08/p2-10.png",
 					name: "Indica With Mild Sedation",
 					description:
 						"Sagitta is an Indica-dominant strain with a ratio of 40:1 THC: CBD. It is known for leaving patients feeling calm, uplifted and relaxed. It is best known for treating conditions such as insomnia, chronic stress, anxiety, bipolar disease, and muscle spasms and tremors. ",
@@ -158,8 +156,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					category: "medical marijuana",
 					sku: "55454657",
-					image:
-						"http://knoxmedical.com/wp-content/uploads/2018/08/p1-10.png",
+					image: "http://knoxmedical.com/wp-content/uploads/2018/08/p1-10.png",
 					name: "Vaporizer Cartridges",
 					description:
 						"“Vaping” is short for “vaporization”. Effects are felt immediately and unlike smoking, no combustion or burning takes place. Portable vaporizers are very discreet, as vapor dissipates quickly with minimal odor.",
@@ -169,8 +166,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					category: "medical marijuana",
 					sku: "44958600",
-					image:
-						"http://knoxmedical.com/wp-content/uploads/2018/08/capsule-odra.png",
+					image: "http://knoxmedical.com/wp-content/uploads/2018/08/capsule-odra.png",
 					name: "THC Capsules",
 					description:
 						"One the most discreet and convenient forms of consumption. The cannabinoids are processed and absorbed by the way of the liver, which means effects are more prolonged than most forms of cannabis ingestion. A diverse variety of options are available.",
@@ -183,8 +179,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					title: "The farm of the future just may be drone driven",
 					category: "Medical Marijuana",
-					image:
-						"https://images.pexels.com/photos/539124/drone-camera-4k-1080-539124.jpeg",
+					image: "https://images.pexels.com/photos/539124/drone-camera-4k-1080-539124.jpeg",
 					content:
 						"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 				},
@@ -198,8 +193,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					title: "Growing medical grade marijuana in the snow!",
 					category: "Medical Marijuana",
-					image:
-						"https://images.pexels.com/photos/1466335/pexels-photo-1466335.jpeg",
+					image: "https://images.pexels.com/photos/1466335/pexels-photo-1466335.jpeg",
 					content:
 						"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 				},
@@ -214,8 +208,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					title: "FCC rules for surprising deregulation",
 					category: "Drones",
-					image:
-						"https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
+					image: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
 					content:
 						"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 				}
