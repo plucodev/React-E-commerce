@@ -1,10 +1,10 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext.jsx";
-import { Rating } from "./rating.jsx";
+import { Context } from "../store/appContext.js";
+import { Rating } from "./rating.js";
 
-import { price } from "../component/functional/price.jsx";
+import { price } from "../component/functional/price.js";
 
 class Featured extends React.Component {
 	render() {

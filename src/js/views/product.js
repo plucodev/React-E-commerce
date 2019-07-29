@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext.jsx";
-import { Rating } from "../component/rating.jsx";
+import { Context } from "../store/appContext.js";
+import { Rating } from "../component/rating.js";
 
-import { price } from "../component/functional/price.jsx";
+import { price } from "../component/functional/price.js";
 
 export class Product extends React.Component {
 	render() {

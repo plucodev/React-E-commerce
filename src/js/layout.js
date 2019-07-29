@@ -16,7 +16,7 @@ import { Cart } from "./views/cart.js";
 import Store from "./store/appContext.js";
 
 import { Navbar } from "./component/navbar.js";
-import { NavbarTwo } from "./component/navbarTwo.js";
+// import { NavbarTwo } from "./component/navbarTwo.js";
 import { Footer } from "./component/footer.js";
 import { Carousel } from "./component/carousel.js";
 

@@ -27,23 +27,14 @@ export class ProductCard extends React.Component {
 								width="140"
 								height="140"
 							/>
-							<h5 className="card-title mt-3 text-truncate">
-								{product.name}
-							</h5>
-							<p className="text-truncate font-weight-light">
-								{product.description}
-							</p>
-							<p className="font-weight-bold">
-								{price(product.price)}
-							</p>
+							<h5 className="card-title mt-3 text-truncate">{product.name}</h5>
+							<p className="text-truncate font-weight-light">{product.description}</p>
+							<p className="font-weight-bold">{price(product.price)}</p>
 							<Rating stars={product.rating} />
 
 							<div className="card-footer bg-transparent ">
 								<p className="mb-0">
-									<Link
-										className="btn btn-success"
-										to={"/product/" + product.sku}
-										role="button">
+									<Link className="btn btn-success" to={"/product/" + product.sku} role="button">
 										View details &raquo;
 									</Link>
 								</p>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext.jsx";
+import { Context } from "../store/appContext.js";
 
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";

@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.js";
 import PropTypes from "prop-types";
-import { Cart } from "../component/cartItem.jsx";
+import { Cart } from "../component/cartItem.js";
 import { CheckoutCart } from "../component/checkoutCart.js";
 
 import { price } from "../component/functional/price.js";

@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext.jsx";
-import { ProductCard } from "../component/productCard.jsx";
+import { Context } from "../store/appContext.js";
+import { ProductCard } from "../component/productCard.js";
 
 export class Products extends React.Component {
 	render() {

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Featured from "../component/featured.js";
 import CarouselHome from "../component/carousel.js";
 import rigoImage from "../../img/ecommerce.jpg";
-import "../../styles/home.css";
+// import "../../styles/home.css";
 
-import "../../styles/home.css";
+import "../../styles/home.scss";
 import "../../styles/carousel.css";
 import "../../styles/featured.css";
 

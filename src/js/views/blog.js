@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext.jsx";
+import { Context } from "../store/appContext.js";
 import "../../styles/blog.css";
 
 export class Blog extends Component {
